@@ -1,11 +1,26 @@
 <script lang="ts">
-  let count = 0;
-  import Example from "$components/ThreeDCardEffect/Example.svelte";
+	import { TextGenerateEffect } from '$components/TextGenerateEffect';
+	import Example from '$components/ThreeDCardEffect/Example.svelte';
 </script>
 
-<h1>Counter: {count}</h1>
-<button class="btn btn-primary" on:click={() => count++}>Increase</button>
-<button class="btn btn-secondary" on:click={() => count--}>Decrease</button>
-<button class="btn btn-accent" on:click={() => (count *= 2)}>Double</button>
-<button class="btn">Button</button>
-<Example />
+<div class="mt-8 text-center text-neutral-500">
+	<TextGenerateEffect
+		words="Hi, I'm Ozan, I'm a Full Stack Engineer. I build bespoke web applications and websites. Check some of these out below!"
+	/>
+</div>
+<div class="mt-8 dark:bg-primary sm:hidden md:block lg:block">
+	<Example />
+</div>
+
+<div class="-mb-80 -mt-64 flex items-center justify-center sm:block md:hidden lg:hidden">
+	<Example />
+</div>
+
+<a href="https://linktr.ee/ozancaglar96" target="_blank">
+	<div class="dark:bg-neutral grid place-items-center bg-primary">
+		<TextGenerateEffect
+			className="mb-4"
+			words="Interested in working with me? Click this banner for my linktr.ee"
+		/>
+	</div>
+</a>
