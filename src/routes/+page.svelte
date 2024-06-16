@@ -3,6 +3,7 @@
 </script>
 
 <h1>Counter: {count}</h1>
-<button on:click={() => count++}>Increase</button>
-<button on:click={() => count--}>Decrease</button>
-<button on:click={() => count *= 2}>Double</button>
+<button class="btn btn-primary" on:click={() => count++}>Increase</button>
+<button class="btn btn-secondary" on:click={() => count--}>Decrease</button>
+<button class="btn btn-accent" on:click={() => (count *= 2)}>Double</button>
+<button class="btn">Button</button>
