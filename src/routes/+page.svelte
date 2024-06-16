@@ -12,10 +12,6 @@
 	<Example />
 </div>
 
-<div class="-mb-80 -mt-64 flex items-center justify-center sm:block md:hidden lg:hidden">
-	<Example />
-</div>
-
 <a href="https://linktr.ee/ozancaglar96" target="_blank">
 	<div class="dark:bg-neutral grid place-items-center bg-primary">
 		<TextGenerateEffect
